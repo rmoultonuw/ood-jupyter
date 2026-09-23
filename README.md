@@ -1,4 +1,4 @@
-# Open OnDemand batch connect app to run Jupyter Notebook
+# Open OnDemand batch connect app for Jupyter Notebook
 
 References:
 * [ood\_rstudio\_apptainer](https://github.com/uwsph/ood_rstudio_apptainer)
