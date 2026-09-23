@@ -11,7 +11,8 @@ References:
 
 ## Usage
 Designed to utilize [Continuum](https://hub.docker.com/u/continuumio/) images (or similar), converted to Singularity containers.
-For example:
+
+Image-conversion example:
 ```bash
 singularity pull docker://continuumio/anaconda3:latest
 ```
