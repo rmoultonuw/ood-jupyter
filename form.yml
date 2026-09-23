@@ -1,0 +1,42 @@
+---
+cluster: "biostat-bayes0"
+form:
+  - singularity_image
+  - biostat_cpus
+  - biostat_mem
+  - bc_num_hours
+  - auto_queues
+  - auto_accounts
+attributes:
+  singularity_image:
+    widget: "path_selector"
+    label: "Image"
+    help: Container image to utilize
+  biostat_cpus:
+    widget: "number_field"
+    label: "Cores"
+    value: 4
+    help: Number of cores to allocate
+    min: 1
+    max: 12
+    step: 1
+  biostat_mem:
+    widget: "number_field"
+    label: "Memory [GiB]"
+    value: 4
+    help: Amount of memory to allocate
+    min: 1
+    max: 128
+    bc_num_hours:
+    label: "Hours"
+    value: 1
+    help: Run time to reserve
+  auto_queues:
+    widget: select
+    label: "Partition"
+    value: "short-12c128g"
+    help: Partition to utilize
+  auto_accounts:
+    widget: select
+    label: "Account"
+    help: Associated cluster account

@@ -1,0 +1,15 @@
+<%-
+  cpus = biostat_cpus.to_i
+  mem = biostat_mem.to_i
+-%>
+---
+batch_connect:
+  template: "basic"
+script:
+  accounting_id: "<%= auto_accounts %>"
+  queue_name: "<%= auto_queues %>"
+  native:
+    - "--cpus-per-task"
+    - "<%= cpus %>"
+    - "--mem"
+    - "<%= mem * 1024 %>"

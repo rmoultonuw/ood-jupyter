@@ -1,0 +1,11 @@
+---
+name: Jupyter Notebook
+category: Interactive Apps
+subcategory: Servers
+role: batch_connect
+description: |
+  An app to launch <a href="https://jupyter.org" target="_blank">Jupyter Notebook</a> on compute nodes<br>
+
+  &nbsp; Note: <a href="https://hub.docker.com/u/continuumio" target="_blank">Continuum</a> container images are recommended for use<br>
+  &emsp; download images as follows:<br>
+  &emsp; $ singularity pull docker://continuumio/anaconda3:latest<br>
