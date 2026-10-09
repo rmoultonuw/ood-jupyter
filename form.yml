@@ -15,19 +15,19 @@ attributes:
   biostat_cpus:
     widget: "number_field"
     label: "Cores"
-    value: 4
-    help: Number of cores to allocate
+    value: 1
+    help: Number of cpu cores to allocate
     min: 1
     max: 12
     step: 1
   biostat_mem:
     widget: "number_field"
     label: "Memory [GiB]"
-    value: 4
+    value: 1
     help: Amount of memory to allocate
     min: 1
     max: 128
-    bc_num_hours:
+  bc_num_hours:
     label: "Hours"
     value: 1
     help: Run time to reserve
